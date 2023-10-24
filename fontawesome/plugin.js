@@ -380,12 +380,14 @@ tinymce.PluginManager.add('fontawesome', function(editor, url) {
     editor.ui.registry.addButton('fontawesome', {
         icon: 'flag',
         tooltip: translate('Icons'),
-        onclick: showDialog
+        onclick: showDialog,
+        onAction: showDialog,
     });
 
     editor.ui.registry.addMenuItem('fontawesome', {
         icon: 'flag',
         onclick: showDialog,
-        context: 'insert'
+        context: 'insert',
+        onAction: showDialog,
     });
 });
