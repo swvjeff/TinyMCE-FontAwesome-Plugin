@@ -1,24 +1,34 @@
-.mce-fontawesome-panel .mce-container-body>.mce-container,
-.mce-fontawesome-panel .mce-container-body>.mce-container>.mce-container-body {
+/* .mce-fontawesome-panel-accordion .mce-container-body>.mce-container,
+.mce-fontawesome-panel-accordion .mce-container-body>.mce-container>.mce-container-body {
 	height: auto!important;
 	width: 670px
 }
 
-.mce-fontawesome-panel .mce-container-body>.mce-container {
+.mce-fontawesome-panel-accordion .mce-container-body>.mce-container {
 	position: static;
 	margin-top: 10px;
 	margin-left: 10px
+} */
+
+.tox-form__group {
+	display: flex;
+	flex-direction: column;
+}
+
+.mce-fontawesome-panel-accordion > .mce-fontawesome-panel-content {
+	display: none;
 }
 
 .mce-fontawesome-panel-title {
-	display: flex;
-	align-items: center;
-	font-weight: 700;
-	margin-top: 5px;
-	margin-bottom: 4px;
-	cursor: pointer;
-	padding: 6px;
-	border-bottom: 1px solid transparent
+	display: flex !important;
+	align-items: center !important;
+	justify-content: space-between !important;
+	font-weight: 700 !important;
+	margin-top: 5px !important;
+	margin-bottom: 4px !important;
+	cursor: pointer !important;
+	padding: 6px !important;
+	border-bottom: 1px solid transparent !important;
 }
 
 .mce-fontawesome-panel-title:focus,
@@ -41,33 +51,32 @@
 
 .mce-fontawesome-panel-accordion-indicator {
 	margin-left: auto;
-	font-family: "Font Awesome 5 Pro"
+    font-family: FontAwesome;
 }
 
-.mce-fontawesome-panel-content {
+.mce-fontawesome-panel-accordion-content {
 	transition: .5s height;
 	overflow: hidden
 }
 
-.mce-fontawesome-panel .mce-icon-cell {
-	font-family: "Font Awesome 5 Pro";
+.mce-fontawesome-panel-accordion .mce-icon-cell {
 	position: relative;
 	float: left;
 	width: 29px;
 	height: 29px
 }
 
-.mce-fontawesome-panel .fas {
+.mce-fontawesome-panel-accordion .fa {
 	display: block;
 	line-height: 29px;
-	font-family: "Font Awesome 5 Pro";
+    font-family: FontAwesome;
 	cursor: pointer;
 	text-align: center;
 	border-radius: 3px
 }
 
-.mce-fontawesome-panel .fa:focus,
-.mce-fontawesome-panel .fa:hover {
+.mce-fontawesome-panel-accordion .fa:focus,
+.mce-fontawesome-panel-accordion .fa:hover {
 	background-color: rgba(0, 0, 0, .1)
 }
 
@@ -76,39 +85,7 @@
 	margin: 10px 0 0 10px
 }
 
-.mce-fontawesome-search-container::before {
-	font-family: "Font Awesome 5 Pro";
-	content: "\f002";
-	position: absolute;
-	top: 0;
-	left: 0;
-	line-height: 30px;
-	color: rgba(0, 0, 0, .4)
-}
-
-.mce-fontawesome-search-container-clear {
-	position: absolute;
-	display: none;
-	top: 0;
-	right: 0
-}
-
-.mce-fontawesome-panel-search .mce-fontawesome-search-container-clear {
-	display: block
-}
-
-.mce-fontawesome-search-container-clear span {
-	line-height: 30px;
-	color: rgba(0, 0, 0, .4)
-}
-
-.mce-fontawesome-search-container-clear:focus span,
-.mce-fontawesome-search-container-clear:hover span {
-	color: rgba(0, 0, 0, .8)
-}
-
 .mce-fontawesome-search-container input {
-	display: block;
 	width: 200px;
 	height: 30px;
 	line-height: 30px;
@@ -119,6 +96,10 @@
 	-moz-appearance: textfield;
 	-webkit-appearance: textfield;
 	appearance: textfield
+}
+
+.mce-fontawesome-search-container .fa-search {
+	font-family: FontAwesome !important;
 }
 
 .mce-fontawesome-search-container input::-webkit-input-placeholder {
@@ -144,7 +125,7 @@
 
 .mce-i-flag {
 	display: inline-block;
-	font-family: "Font Awesome 5 Pro";
+    font-family: FontAwesome;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1;
